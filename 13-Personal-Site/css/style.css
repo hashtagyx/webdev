@@ -1,0 +1,93 @@
+.be-vietnam {
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: #4a55a2;
+}
+.bitter {
+  font-family: "Bitter", serif;
+  color: #4a55a2;
+}
+
+.page-1-bg {
+  background: linear-gradient(300deg, #e5b8ee, #9f96e2, #9bd6f5, #b3c1ee);
+  background-size: 100% 100%;
+  animation: gradient-animation 18s ease infinite;
+  position: relative;
+}
+.vh100 {
+  min-height: 100vh;
+  position: relative;
+  /* overflow: auto; */
+}
+
+.dynamic-large {
+  font-size: 4.3vmin;
+}
+
+.dynamic-para {
+  font-size: 2.7vmin;
+}
+
+.dynamic-job {
+  font-size: 3vmin;
+}
+
+.dynamic-job-para {
+  font-size: 2vmin;
+}
+
+.botmountain {
+  width: 60%;
+  height: 60%;
+}
+
+.botmountainwrapper {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.page-1-bitter {
+  font-size: 15vmin;
+}
+
+.page-1-be-vietnam {
+  font-size: 5vmin;
+}
+
+.page-2-bg {
+  background-color: #c5dff8;
+  /* background-image: url(../images/mountains.png); */
+  background-image: url(../images/page2background2.png);
+  /* background-size: auto 100%; */
+  background-size: contain;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.page-4-bg {
+  background-color: #c5dff8;
+}
+
+.page-5-bg {
+  background-color: #A0BFE0;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 30vmin;
+  border-color: #7895CB;
+  border-style: solid;
+}
+
+.project-img {
+  max-height: 60vh;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 50%;
+}
