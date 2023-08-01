@@ -18,7 +18,9 @@ document.addEventListener("keydown", (event) => {
 function buttonAnimation(character) {
     var activeButton = document.querySelector("." + character);
     activeButton.classList.add("pressed");
-    setTimeout(activeButton.classList.remove("pressed"), 100);
+    setTimeout(function() {
+        activeButton.classList.remove("pressed")
+    }, 100);
 }
 
 function playAudio(character) {
