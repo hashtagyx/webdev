@@ -12,7 +12,7 @@ function handleClick() {
 
 document.addEventListener("keydown", (event) => {
     playAudio(event.key);
-    buttonAnimation(character);
+    buttonAnimation(event.key);
 })
 
 function buttonAnimation(character) {
