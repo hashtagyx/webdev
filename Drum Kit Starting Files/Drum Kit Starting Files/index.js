@@ -5,7 +5,18 @@ for (var i = 0; i < buttons.length; i++) {
 
 function handleClick() {
     // this.style.color = "white";
-    switch (this.innerHTML) {
+    var character = this.innerHTML;
+    playAudio(character);
+    // var audio = new Audio('./sounds/tom-1.mp3');
+    // audio.play();
+}
+
+document.addEventListener("keydown", (event) => {
+    playAudio(event.key);
+})
+
+function playAudio(character) {
+    switch (character) {
         case "w":
             var tom1 = new Audio('./sounds/tom-1.mp3');
             tom1.play();
@@ -34,10 +45,8 @@ function handleClick() {
             var kick = new Audio('./sounds/kick-bass.mp3');
             kick.play();
             break;
-        
+
         default:
-            console.log(this.innerHTML);
+            console.log(character);
     }
-    // var audio = new Audio('./sounds/tom-1.mp3');
-    // audio.play();
 }
