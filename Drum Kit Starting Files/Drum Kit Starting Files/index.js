@@ -7,13 +7,19 @@ function handleClick() {
     // this.style.color = "white";
     var character = this.innerHTML;
     playAudio(character);
-    // var audio = new Audio('./sounds/tom-1.mp3');
-    // audio.play();
+    buttonAnimation(character);
 }
 
 document.addEventListener("keydown", (event) => {
     playAudio(event.key);
+    buttonAnimation(character);
 })
+
+function buttonAnimation(character) {
+    var activeButton = document.querySelector("." + character);
+    activeButton.classList.add("pressed");
+    setTimeout(activeButton.classList.remove("pressed"), 100);
+}
 
 function playAudio(character) {
     switch (character) {
