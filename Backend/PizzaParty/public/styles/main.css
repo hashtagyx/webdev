@@ -1,0 +1,25 @@
+.pizza {
+    height: 30vh;
+}
+
+h1,h3,p {
+    font-family: 'Inter Tight', sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 6vmin;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+
+.box button{
+    width: 175px;
+}
+
+.vh-100 {
+    height: 100vh;
+}
